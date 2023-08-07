@@ -29,6 +29,23 @@
             <Color x:Key="RaisedFrameDisabledBackgroundColor">#CCCCCC</Color>
             <Color x:Key="RaisedFrameDisabledBorderColor">#BFBFBF</Color>
 
+            <Color x:Key="RadioButtonNormalBackgroundColor">#FFFFFF</Color>
+            <Color x:Key="RadioButtonNormalBorderColor">#333333</Color>
+            <Color x:Key="RadioButtonHoveredBackgroundColor">#FFFFFF</Color>
+            <Color x:Key="RadioButtonHoveredBorderColor">#0078D7</Color>
+            <Color x:Key="RadioButtonActiveBackgroundColor">#FFFFFF</Color>
+            <Color x:Key="RadioButtonActiveBorderColor">#333333</Color>
+            <Color x:Key="RadioButtonDisabledBackgroundColor">#FFFFFF</Color>
+            <Color x:Key="RadioButtonDisabledBorderColor">#CCCCCC</Color>
+            
+            <Color x:Key="DisabledForegroundColor">#838383</Color>
+            <Color x:Key="DisabledForegroundColor2">#6D6D6D</Color>
+
+            <SolidColorBrush x:Key="DisabledForegroundBrush"
+                             Color="{StaticResource DisabledForegroundColor}" />
+            <SolidColorBrush x:Key="DisabledForegroundBrush2"
+                             Color="{StaticResource DisabledForegroundColor2}" />
+
             <SolidColorBrush x:Key="RaisedFrameNormalBackgroundBrush"
                              Color="{StaticResource RaisedFrameNormalBackgroundColor}" />
             <SolidColorBrush x:Key="RaisedFrameNormalBorderBrush" Color="{StaticResource RaisedFrameNormalBorderColor}" />
@@ -43,6 +60,21 @@
                              Color="{StaticResource RaisedFrameDisabledBackgroundColor}" />
             <SolidColorBrush x:Key="RaisedFrameDisabledBorderBrush"
                              Color="{StaticResource RaisedFrameDisabledBorderColor}" />
+
+            <SolidColorBrush x:Key="RadioButtonNormalBackgroundBrush"
+                             Color="{StaticResource RadioButtonNormalBackgroundColor}" />
+            <SolidColorBrush x:Key="RadioButtonNormalBorderBrush" Color="{StaticResource RadioButtonNormalBorderColor}" />
+            <SolidColorBrush x:Key="RadioButtonHoveredBackgroundBrush"
+                             Color="{StaticResource RadioButtonHoveredBackgroundColor}" />
+            <SolidColorBrush x:Key="RadioButtonHoveredBorderBrush"
+                             Color="{StaticResource RadioButtonHoveredBorderColor}" />
+            <SolidColorBrush x:Key="RadioButtonActiveBackgroundBrush"
+                             Color="{StaticResource RadioButtonActiveBackgroundColor}" />
+            <SolidColorBrush x:Key="RadioButtonActiveBorderBrush" Color="{StaticResource RadioButtonActiveBorderColor}" />
+            <SolidColorBrush x:Key="RadioButtonDisabledBackgroundBrush"
+                             Color="{StaticResource RadioButtonDisabledBackgroundColor}" />
+            <SolidColorBrush x:Key="RadioButtonDisabledBorderBrush"
+                             Color="{StaticResource RadioButtonDisabledBorderColor}" />
 
             <Color x:Key="EditFrameNormalBackgroundColor">#FFFFFF</Color>
             <Color x:Key="EditFrameNormalBorderColor">#7A7A7A</Color>

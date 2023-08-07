@@ -5,6 +5,16 @@
       <map>
         <entry key="Aurumaker.Themes.Windows10.Demo/App.axaml" value="Aurumaker.Themes.Windows10.Demo/Aurumaker.Themes.Windows10.Demo.csproj" />
         <entry key="Aurumaker.Themes.Windows10.Demo/MainWindow.axaml" value="Aurumaker.Themes.Windows10.Demo/Aurumaker.Themes.Windows10.Demo.csproj" />
+        <entry key="Aurumaker.Themes.Windows10/Accents/Base.xaml" value="Aurumaker.Themes.Windows10.Demo/Aurumaker.Themes.Windows10.Demo.csproj" />
+        <entry key="Aurumaker.Themes.Windows10/Controls/AdornerLayer.xaml" value="Aurumaker.Themes.Windows10.Demo/Aurumaker.Themes.Windows10.Demo.csproj" />
+        <entry key="Aurumaker.Themes.Windows10/Controls/Button.xaml" value="Aurumaker.Themes.Windows10.Demo/Aurumaker.Themes.Windows10.Demo.csproj" />
+        <entry key="Aurumaker.Themes.Windows10/Controls/CheckBox.xaml" value="Aurumaker.Themes.Windows10.Demo/Aurumaker.Themes.Windows10.Demo.csproj" />
+        <entry key="Aurumaker.Themes.Windows10/Controls/ComboBox.xaml" value="Aurumaker.Themes.Windows10.Demo/Aurumaker.Themes.Windows10.Demo.csproj" />
+        <entry key="Aurumaker.Themes.Windows10/Controls/ItemsControl.xaml" value="Aurumaker.Themes.Windows10.Demo/Aurumaker.Themes.Windows10.Demo.csproj" />
+        <entry key="Aurumaker.Themes.Windows10/Controls/ListBox.xaml" value="Aurumaker.Themes.Windows10.Demo/Aurumaker.Themes.Windows10.Demo.csproj" />
+        <entry key="Aurumaker.Themes.Windows10/Controls/RadioButton.xaml" value="Aurumaker.Themes.Windows10.Demo/Aurumaker.Themes.Windows10.Demo.csproj" />
+        <entry key="Aurumaker.Themes.Windows10/Controls/Slider.xaml" value="Aurumaker.Themes.Windows10.Demo/Aurumaker.Themes.Windows10.Demo.csproj" />
+        <entry key="Aurumaker.Themes.Windows10/Controls/TextBox.xaml" value="Aurumaker.Themes.Windows10.Demo/Aurumaker.Themes.Windows10.Demo.csproj" />
       </map>
     </option>
   </component>

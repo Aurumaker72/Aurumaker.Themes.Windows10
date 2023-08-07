@@ -18,10 +18,28 @@
         <RadioButton Content="Hello World"/>
         <RadioButton Content="Hello World"/>
         <RadioButton Content="Hello World" IsEnabled="False"/>
-        <Slider Width="200"/>
-        <Slider Width="200" IsEnabled="False"/>
+        <Slider Width="200" Height="23"/>
+        <Slider Width="200" Height="23" IsEnabled="False"/>
+        <Slider Orientation="Vertical" Width="23" Height="100"/>
+        <Slider Orientation="Vertical" Width="23" Height="100" IsEnabled="False"/>
         <CheckBox Content="Hello World"/>
         <CheckBox Content="Hello World" IsEnabled="False"/>
+        <ComboBox>
+            <ComboBox.Items>
+                <ListBoxItem>Hello World</ListBoxItem>
+                <ListBoxItem>Hello World</ListBoxItem>
+                <ListBoxItem>Hello World</ListBoxItem>
+                <ListBoxItem>Hello World</ListBoxItem>
+            </ComboBox.Items>
+        </ComboBox>
+        <ComboBox IsEnabled="False">
+            <ComboBox.Items>
+                <ListBoxItem>Hello World</ListBoxItem>
+                <ListBoxItem>Hello World</ListBoxItem>
+                <ListBoxItem>Hello World</ListBoxItem>
+                <ListBoxItem>Hello World</ListBoxItem>
+            </ComboBox.Items>
+        </ComboBox>
         <ListBox>
             <ListBox.Items>
                 <ListBoxItem>Hello World</ListBoxItem>

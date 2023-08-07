@@ -37,7 +37,7 @@
         <Style Selector="^:disabled">
             <Setter Property="Background" Value="{DynamicResource RaisedFrameDisabledBackgroundBrush}" />
             <Setter Property="BorderBrush" Value="{DynamicResource RaisedFrameDisabledBorderBrush}" />
-
+            <Setter Property="Foreground" Value="{DynamicResource DisabledForegroundBrush}" />
         </Style>
     </ControlTheme>
 </ResourceDictionary>

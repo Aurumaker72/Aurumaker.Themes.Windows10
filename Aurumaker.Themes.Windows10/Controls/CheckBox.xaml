@@ -14,8 +14,8 @@
             <ControlTemplate>
                 <Grid ColumnDefinitions="Auto,*">
                     <Border Name="border"
-                            Width="18"
-                            Height="18"
+                            Width="13"
+                            Height="13"
                             VerticalAlignment="Center"
                             Background="{TemplateBinding Background}"
                             BorderBrush="{TemplateBinding BorderBrush}"
@@ -23,8 +23,9 @@
                             CornerRadius="{TemplateBinding CornerRadius}">
                         <Panel>
                             <Path Name="checkMark"
-                                  Width="11"
-                                  Height="10"
+                                  Margin="4"
+                                  Width="13"
+                                  Height="13"
                                   HorizontalAlignment="Center"
                                   VerticalAlignment="Center"
                                   Data="M 1145.607177734375,430 C1145.607177734375,430 1141.449951171875,435.0772705078125 1141.449951171875,435.0772705078125 1141.449951171875,435.0772705078125 1139.232177734375,433.0999755859375 1139.232177734375,433.0999755859375 1139.232177734375,433.0999755859375 1138,434.5538330078125 1138,434.5538330078125 1138,434.5538330078125 1141.482177734375,438 1141.482177734375,438 1141.482177734375,438 1141.96875,437.9375 1141.96875,437.9375 1141.96875,437.9375 1147,431.34619140625 1147,431.34619140625 1147,431.34619140625 1145.607177734375,430 1145.607177734375,430 z"
@@ -32,8 +33,9 @@
                                   FlowDirection="LeftToRight"
                                   Stretch="Uniform" />
                             <Rectangle Name="indeterminateMark"
-                                       Width="10"
-                                       Height="10"
+                                       Margin="4"
+                                       Width="13"
+                                       Height="13"
                                        HorizontalAlignment="Center"
                                        VerticalAlignment="Center"
                                        Fill="{DynamicResource HighlightBrush}"

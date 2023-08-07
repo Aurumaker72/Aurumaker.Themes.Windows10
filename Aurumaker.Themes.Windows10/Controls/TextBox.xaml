@@ -184,7 +184,9 @@
             <Setter Property="Background" Value="{DynamicResource EditFrameDisabledBackgroundBrush}" />
             <Setter Property="BorderBrush" Value="{DynamicResource EditFrameDisabledBorderBrush}" />
         </Style>
-
+        <Style Selector="^:disabled">
+            <Setter Property="Foreground" Value="{DynamicResource DisabledForegroundBrush2}" />
+        </Style>
         <Style Selector="^.clearButton[AcceptsReturn=False][IsReadOnly=False]:focus:not(TextBox:empty)">
             <Setter Property="InnerRightContent">
                 <Template>

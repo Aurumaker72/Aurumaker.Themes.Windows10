@@ -3,29 +3,30 @@
                     x:ClassModifier="internal">
     <ControlTheme x:Key="{x:Type RadioButton}"
                   TargetType="RadioButton">
-        <Setter Property="Background" Value="Transparent" />
-        <Setter Property="BorderBrush" Value="{DynamicResource ThemeBorderMidBrush}" />
+        <Setter Property="Background" Value="{DynamicResource RadioButtonNormalBackgroundBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource RadioButtonNormalBorderBrush}" />
         <Setter Property="BorderThickness" Value="{DynamicResource ThemeBorderThickness}" />
         <Setter Property="Template">
             <ControlTemplate>
                 <Grid Background="{TemplateBinding Background}"
                       ColumnDefinitions="Auto,*">
                     <Ellipse Name="border"
-                             Width="18"
-                             Height="18"
+                             Width="13"
+                             Height="13"
                              VerticalAlignment="Center"
                              Stroke="{TemplateBinding BorderBrush}"
                              StrokeThickness="1" />
                     <Ellipse Name="checkMark"
-                             Width="10"
-                             Height="10"
+                             Width="7"
+                             Height="7"
                              HorizontalAlignment="Center"
                              VerticalAlignment="Center"
                              Stretch="Uniform"
+                             Fill="{DynamicResource RadioButtonActiveBorderBrush}"
                              UseLayoutRounding="False" />
                     <Ellipse Name="indeterminateMark"
-                             Width="10"
-                             Height="10"
+                             Width="7"
+                             Height="7"
                              HorizontalAlignment="Center"
                              VerticalAlignment="Center"
                              Fill="{DynamicResource ThemeAccentBrush}"
@@ -43,10 +44,10 @@
         </Setter>
 
         <Style Selector="^:pointerover /template/ Ellipse#border">
-            <Setter Property="Stroke" Value="{DynamicResource ThemeBorderHighBrush}" />
+            <Setter Property="Stroke" Value="{DynamicResource RadioButtonHoveredBorderBrush}" />
         </Style>
+        
         <Style Selector="^ /template/ Ellipse#checkMark">
-            <Setter Property="Fill" Value="{DynamicResource HighlightBrush}" />
             <Setter Property="IsVisible" Value="False" />
         </Style>
         <Style Selector="^ /template/ Ellipse#indeterminateMark">

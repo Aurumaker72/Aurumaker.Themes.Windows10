@@ -50,9 +50,23 @@
                                 <Thumb.Template>
                                     <ControlTemplate>
                                         <Grid>
-                                            <Ellipse Width="12"
-                                                     Height="12"
-                                                     Fill="{DynamicResource ThemeAccentBrush}" />
+                                            <Rectangle
+                                                Name="ThumbRectangle"
+                                                Width="9"
+                                                Height="18"
+                                                Fill="#007AD9">
+                                                <Rectangle.Styles>
+                                                    <Style Selector="Rectangle:pointerover">
+                                                        <Setter Property="Fill" Value="Black" />
+                                                    </Style>
+                                                    <Style Selector="Rectangle:pressed">
+                                                        <Setter Property="Fill" Value="#CCCCCC" />
+                                                    </Style>
+                                                    <Style Selector="Rectangle:disabled">
+                                                        <Setter Property="Fill" Value="#CCCCCC" />
+                                                    </Style>
+                                                </Rectangle.Styles>
+                                            </Rectangle>
                                         </Grid>
                                     </ControlTemplate>
                                 </Thumb.Template>
@@ -97,9 +111,23 @@
                                 <Thumb.Template>
                                     <ControlTemplate>
                                         <Grid>
-                                            <Ellipse Width="12"
-                                                     Height="12"
-                                                     Fill="{DynamicResource ThemeAccentBrush}" />
+                                            <Rectangle
+                                                Name="ThumbRectangle"
+                                                Width="18"
+                                                Height="9"
+                                                Fill="#007AD9">
+                                                <Rectangle.Styles>
+                                                    <Style Selector="Rectangle:pointerover">
+                                                        <Setter Property="Fill" Value="Black" />
+                                                    </Style>
+                                                    <Style Selector="Rectangle:pressed">
+                                                        <Setter Property="Fill" Value="#CCCCCC" />
+                                                    </Style>
+                                                    <Style Selector="Rectangle:disabled">
+                                                        <Setter Property="Fill" Value="#CCCCCC" />
+                                                    </Style>
+                                                </Rectangle.Styles>
+                                            </Rectangle>
                                         </Grid>
                                     </ControlTemplate>
                                 </Thumb.Template>
@@ -107,6 +135,7 @@
                         </Track>
                     </Grid>
                 </ControlTemplate>
+
             </Setter>
         </Style>
 
@@ -116,14 +145,15 @@
             <Setter Property="Value" Value="{TemplateBinding Value, Mode=TwoWay}" />
         </Style>
         <Style Selector="^ /template/ Border#TrackBackground">
-            <Setter Property="BorderThickness" Value="2" />
-            <Setter Property="BorderBrush" Value="{DynamicResource ThemeBorderLowBrush}" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="Background" Value="#E7EAEA" />
+            <Setter Property="BorderBrush" Value="#D6D6D6" />
         </Style>
+
         <Style Selector="^ /template/ TickBar">
             <Setter Property="Ticks" Value="{TemplateBinding Ticks}" />
         </Style>
         <Style Selector="^:disabled /template/ Grid#grid">
-            <Setter Property="Opacity" Value="{DynamicResource ThemeDisabledOpacity}" />
         </Style>
     </ControlTheme>
 </ResourceDictionary>

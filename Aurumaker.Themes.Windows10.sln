@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.33808.371
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aurumaker.Themes.Windows10", "Aurumaker.Themes.Windows10\Aurumaker.Themes.Windows10.csproj", "{FBA87150-4BCC-43E7-8CEF-F1720FF9DDAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aurumaker.Themes.Windows10.Demo", "Aurumaker.Themes.Windows10.Demo\Aurumaker.Themes.Windows10.Demo.csproj", "{E1097472-8BDC-4E50-8DC5-0FBEB4585948}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBA87150-4BCC-43E7-8CEF-F1720FF9DDAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBA87150-4BCC-43E7-8CEF-F1720FF9DDAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBA87150-4BCC-43E7-8CEF-F1720FF9DDAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBA87150-4BCC-43E7-8CEF-F1720FF9DDAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1097472-8BDC-4E50-8DC5-0FBEB4585948}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1097472-8BDC-4E50-8DC5-0FBEB4585948}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1097472-8BDC-4E50-8DC5-0FBEB4585948}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1097472-8BDC-4E50-8DC5-0FBEB4585948}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3BB5C676-CBB2-48DC-9EF4-517870859030}
+	EndGlobalSection
+EndGlobal

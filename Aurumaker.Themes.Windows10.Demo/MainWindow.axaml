@@ -1,0 +1,42 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Aurumaker.Themes.Windows10.Demo.MainWindow"
+        Title="Aurumaker.Themes.Windows10.Demo">
+    <Window.Styles>
+        <Style Selector="StackPanel Button, TextBox, RadioButton, Slider, CheckBox, ListBox">
+            <Setter Property="Margin" Value="0 10 0 0"/>
+        </Style>
+    </Window.Styles>
+    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Button Content="Hello World"/>
+        <Button Content="Hello World" IsEnabled="False"/>
+        <TextBox Text="Hello World"/>
+        <TextBox Text="Hello World" IsEnabled="False"/>
+        <RadioButton Content="Hello World"/>
+        <RadioButton Content="Hello World"/>
+        <RadioButton Content="Hello World" IsEnabled="False"/>
+        <Slider Width="200"/>
+        <Slider Width="200" IsEnabled="False"/>
+        <CheckBox Content="Hello World"/>
+        <CheckBox Content="Hello World" IsEnabled="False"/>
+        <ListBox>
+            <ListBox.Items>
+                <ListBoxItem>Hello World</ListBoxItem>
+                <ListBoxItem>Hello World</ListBoxItem>
+                <ListBoxItem>Hello World</ListBoxItem>
+                <ListBoxItem>Hello World</ListBoxItem>
+            </ListBox.Items>
+        </ListBox>
+        <ListBox IsEnabled="False">
+            <ListBox.Items>
+                <ListBoxItem>Hello World</ListBoxItem>
+                <ListBoxItem>Hello World</ListBoxItem>
+                <ListBoxItem>Hello World</ListBoxItem>
+                <ListBoxItem>Hello World</ListBoxItem>
+            </ListBox.Items>
+        </ListBox>
+    </StackPanel>
+</Window>

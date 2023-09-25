@@ -4,9 +4,9 @@
     <ControlTheme x:Key="{x:Type CheckBox}"
                   TargetType="CheckBox">
         <Setter Property="Foreground" Value="{DynamicResource ThemeForegroundBrush}" />
-        <Setter Property="Background" Value="Transparent" />
-        <Setter Property="BorderBrush" Value="{DynamicResource ThemeBorderMidBrush}" />
-        <Setter Property="BorderThickness" Value="{DynamicResource ThemeBorderThickness}" />
+        <Setter Property="Background" Value="#FFFFFF" />
+        <Setter Property="BorderBrush" Value="#333333" />
+        <Setter Property="BorderThickness" Value="1" />
         <Setter Property="Padding" Value="4,0,0,0" />
         <Setter Property="VerticalContentAlignment" Value="Center" />
         <Setter Property="HorizontalContentAlignment" Value="Left" />
@@ -22,14 +22,15 @@
                             BorderThickness="{TemplateBinding BorderThickness}"
                             CornerRadius="{TemplateBinding CornerRadius}">
                         <Panel>
+                            <!-- TODO: replicate win10 checkmark in svg -->
                             <Path Name="checkMark"
-                                  Margin="4"
+                                  Margin="0"
                                   Width="13"
                                   Height="13"
                                   HorizontalAlignment="Center"
                                   VerticalAlignment="Center"
                                   Data="M 1145.607177734375,430 C1145.607177734375,430 1141.449951171875,435.0772705078125 1141.449951171875,435.0772705078125 1141.449951171875,435.0772705078125 1139.232177734375,433.0999755859375 1139.232177734375,433.0999755859375 1139.232177734375,433.0999755859375 1138,434.5538330078125 1138,434.5538330078125 1138,434.5538330078125 1141.482177734375,438 1141.482177734375,438 1141.482177734375,438 1141.96875,437.9375 1141.96875,437.9375 1141.96875,437.9375 1147,431.34619140625 1147,431.34619140625 1147,431.34619140625 1145.607177734375,430 1145.607177734375,430 z"
-                                  Fill="{DynamicResource HighlightBrush}"
+                                  Fill="#0078D7"
                                   FlowDirection="LeftToRight"
                                   Stretch="Uniform" />
                             <Rectangle Name="indeterminateMark"
@@ -57,7 +58,11 @@
             </ControlTemplate>
         </Setter>
         <Style Selector="^:pointerover /template/ Border#border">
-            <Setter Property="BorderBrush" Value="{DynamicResource ThemeBorderHighBrush}" />
+            <Setter Property="BorderBrush" Value="#0078D7" />
+        </Style>
+        <Style Selector="^:pressed /template/ Border#border">
+            <Setter Property="BorderBrush" Value="#005499" />
+            <Setter Property="Background" Value="#CCE4F7" />
         </Style>
         <Style Selector="^ /template/ Path#checkMark">
             <Setter Property="IsVisible" Value="False" />
@@ -72,7 +77,10 @@
             <Setter Property="IsVisible" Value="True" />
         </Style>
         <Style Selector="^:disabled /template/ Border#border">
-            <Setter Property="Opacity" Value="{DynamicResource ThemeDisabledOpacity}" />
+            <Setter Property="BorderBrush" Value="#CCCCCC" />
+        </Style>
+        <Style Selector="^:disabled">
+            <Setter Property="Foreground" Value="#6D6D6D" />
         </Style>
     </ControlTheme>
 </ResourceDictionary>

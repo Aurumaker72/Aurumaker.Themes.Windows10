@@ -88,7 +88,7 @@
         <Setter Property="BorderThickness" Value="{DynamicResource ThemeBorderThickness}" />
         <Setter Property="SelectionBrush" Value="{DynamicResource HighlightBrush}" />
         <Setter Property="SelectionForegroundBrush" Value="{DynamicResource HighlightForegroundBrush}" />
-        <Setter Property="Padding" Value="4" />
+        <Setter Property="Padding" Value="2 4 2 4" />
         <Setter Property="ContextFlyout" Value="{StaticResource Windows10TextBoxContextFlyout}" />
         <Setter Property="ScrollViewer.IsScrollChainingEnabled" Value="True" />
         <Setter Property="Template">

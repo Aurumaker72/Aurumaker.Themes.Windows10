@@ -1,6 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <TargetFrameworks>net6.0;net7.0</TargetFrameworks>
+        <PackageId>Aurumaker.Themes.Windows10</PackageId>
+        <Version>1.0.0</Version>
+        <Authors>Aurumaker72</Authors>
     </PropertyGroup>
     <ItemGroup>
         <AvaloniaResource Include="**/*.xaml" />

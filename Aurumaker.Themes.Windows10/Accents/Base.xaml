@@ -9,10 +9,10 @@
             <Color x:Key="ThemeBorderMidColor">#0078D7</Color>
             <Color x:Key="ThemeBorderHighColor">#FF333333</Color>
             <Color x:Key="ThemeControlLowColor">#FF868999</Color>
-            <Color x:Key="ThemeControlMidColor">#E1E1E1</Color>
-            <Color x:Key="ThemeControlMidHighColor">#FFC2C3C9</Color>
-            <Color x:Key="ThemeControlHighColor">#CCE4F7</Color>
-            <Color x:Key="ThemeControlVeryHighColor">#FF5B5B5B</Color>
+            <Color x:Key="ThemeControlMidColor">#F0F0F0</Color>
+            <Color x:Key="ThemeControlMidHighColor">#CDCDCD</Color>
+            <Color x:Key="ThemeControlHighColor">#A6A6A6</Color>
+            <Color x:Key="ThemeControlVeryHighColor">#606060</Color>
             <Color x:Key="ThemeControlHighlightLowColor">#FFF0F0F0</Color>
             <Color x:Key="ThemeControlHighlightMidColor">#FFD0D0D0</Color>
             <Color x:Key="ThemeControlHighlightHighColor">#FF808080</Color>
@@ -214,8 +214,8 @@
     <sys:Double x:Key="FontSizeNormal">12</sys:Double>
     <sys:Double x:Key="FontSizeLarge">16</sys:Double>
 
-    <sys:Double x:Key="ScrollBarThickness">18</sys:Double>
-    <sys:Double x:Key="ScrollBarThumbThickness">8</sys:Double>
+    <sys:Double x:Key="ScrollBarThickness">17</sys:Double>
+    <sys:Double x:Key="ScrollBarThumbThickness">15</sys:Double>
 
     <sys:Double x:Key="IconElementThemeHeight">20</sys:Double>
     <sys:Double x:Key="IconElementThemeWidth">20</sys:Double>

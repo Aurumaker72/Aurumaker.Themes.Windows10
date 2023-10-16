@@ -9,7 +9,7 @@
         <Setter Property="Foreground" Value="{DynamicResource ThemeForegroundBrush}" />
         <Setter Property="HorizontalContentAlignment" Value="Stretch" />
         <Setter Property="VerticalContentAlignment" Value="Center" />
-        <Setter Property="Padding" Value="4" />
+        <Setter Property="Padding" Value="2 4 2 4" />
         <Setter Property="MinHeight" Value="20" />
         <Setter Property="PlaceholderForeground" Value="{DynamicResource ThemeForegroundBrush}" />
         <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Disabled" />

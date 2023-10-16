@@ -7,54 +7,66 @@
         Title="Aurumaker.Themes.Windows10.Demo">
     <Window.Styles>
         <Style Selector="StackPanel Button, TextBox, RadioButton, Slider, CheckBox, ListBox">
-            <Setter Property="Margin" Value="0 10 0 0"/>
+            <Setter Property="Margin" Value="0 10 0 0" />
         </Style>
     </Window.Styles>
-    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
-        <Button Content="Hello World"/>
-        <Button Content="Hello World" IsEnabled="False"/>
-        <TextBox Text="Hello World"/>
-        <TextBox Text="Hello World" IsEnabled="False"/>
-        <RadioButton Content="Hello World"/>
-        <RadioButton Content="Hello World"/>
-        <RadioButton Content="Hello World" IsEnabled="False"/>
-        <Slider Width="200" Height="23"/>
-        <Slider Width="200" Height="23" IsEnabled="False"/>
-        <Slider Orientation="Vertical" Width="23" Height="100"/>
-        <Slider Orientation="Vertical" Width="23" Height="100" IsEnabled="False"/>
-        <CheckBox Content="Hello World"/>
-        <CheckBox Content="Hello World" IsEnabled="False"/>
-        <ComboBox>
-            <ComboBox.Items>
-                <ListBoxItem>Hello World</ListBoxItem>
-                <ListBoxItem>Hello World</ListBoxItem>
-                <ListBoxItem>Hello World</ListBoxItem>
-                <ListBoxItem>Hello World</ListBoxItem>
-            </ComboBox.Items>
-        </ComboBox>
-        <ComboBox IsEnabled="False">
-            <ComboBox.Items>
-                <ListBoxItem>Hello World</ListBoxItem>
-                <ListBoxItem>Hello World</ListBoxItem>
-                <ListBoxItem>Hello World</ListBoxItem>
-                <ListBoxItem>Hello World</ListBoxItem>
-            </ComboBox.Items>
-        </ComboBox>
-        <ListBox>
-            <ListBox.Items>
-                <ListBoxItem>Hello World</ListBoxItem>
-                <ListBoxItem>Hello World</ListBoxItem>
-                <ListBoxItem>Hello World</ListBoxItem>
-                <ListBoxItem>Hello World</ListBoxItem>
-            </ListBox.Items>
-        </ListBox>
-        <ListBox IsEnabled="False">
-            <ListBox.Items>
-                <ListBoxItem>Hello World</ListBoxItem>
-                <ListBoxItem>Hello World</ListBoxItem>
-                <ListBoxItem>Hello World</ListBoxItem>
-                <ListBoxItem>Hello World</ListBoxItem>
-            </ListBox.Items>
-        </ListBox>
-    </StackPanel>
+    
+    <ScrollViewer>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Menu>
+                <MenuItem Header="File">
+                    <MenuItem Header="Open" IsEnabled="False"/>
+                    <Separator/>
+                    <MenuItem Header="Close"/>
+                </MenuItem>
+            </Menu>
+            <Button Content="Hello World" />
+            <Button Content="Hello World" IsEnabled="False" />
+            <ToggleButton Content="Hello World" />
+            <ToggleButton Content="Hello World" IsEnabled="False" />
+            <TextBox Text="Hello World" />
+            <TextBox Text="Hello World" IsEnabled="False" />
+            <RadioButton Content="Hello World" />
+            <RadioButton Content="Hello World" />
+            <RadioButton Content="Hello World" IsEnabled="False" />
+            <Slider Width="200" Height="23" />
+            <Slider Width="200" Height="23" IsEnabled="False" />
+            <Slider Orientation="Vertical" Width="23" Height="100" />
+            <Slider Orientation="Vertical" Width="23" Height="100" IsEnabled="False" />
+            <CheckBox Content="Hello World" />
+            <CheckBox Content="Hello World" IsEnabled="False" />
+            <ComboBox>
+                <ComboBox.Items>
+                    <ListBoxItem>Hello World</ListBoxItem>
+                    <ListBoxItem>Hello World</ListBoxItem>
+                    <ListBoxItem>Hello World</ListBoxItem>
+                    <ListBoxItem>Hello World</ListBoxItem>
+                </ComboBox.Items>
+            </ComboBox>
+            <ComboBox IsEnabled="False">
+                <ComboBox.Items>
+                    <ListBoxItem>Hello World</ListBoxItem>
+                    <ListBoxItem>Hello World</ListBoxItem>
+                    <ListBoxItem>Hello World</ListBoxItem>
+                    <ListBoxItem>Hello World</ListBoxItem>
+                </ComboBox.Items>
+            </ComboBox>
+            <ListBox>
+                <ListBox.Items>
+                    <ListBoxItem>Hello World</ListBoxItem>
+                    <ListBoxItem>Hello World</ListBoxItem>
+                    <ListBoxItem>Hello World</ListBoxItem>
+                    <ListBoxItem>Hello World</ListBoxItem>
+                </ListBox.Items>
+            </ListBox>
+            <ListBox IsEnabled="False">
+                <ListBox.Items>
+                    <ListBoxItem>Hello World</ListBoxItem>
+                    <ListBoxItem>Hello World</ListBoxItem>
+                    <ListBoxItem>Hello World</ListBoxItem>
+                    <ListBoxItem>Hello World</ListBoxItem>
+                </ListBox.Items>
+            </ListBox>
+        </StackPanel>
+    </ScrollViewer>
 </Window>

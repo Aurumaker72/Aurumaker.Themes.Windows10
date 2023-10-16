@@ -3,11 +3,11 @@
                     x:ClassModifier="internal">
     <ControlTheme x:Key="{x:Type ToggleButton}"
                   TargetType="ToggleButton">
-        <Setter Property="Background" Value="{DynamicResource ThemeControlMidBrush}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource ThemeBorderLowBrush}" />
+        <Setter Property="Background" Value="{DynamicResource RaisedFrameNormalBackgroundBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource RaisedFrameNormalBorderBrush}" />
         <Setter Property="BorderThickness" Value="{DynamicResource ThemeBorderThickness}" />
         <Setter Property="Foreground" Value="{DynamicResource ThemeForegroundBrush}" />
-        <Setter Property="Padding" Value="4" />
+        <Setter Property="Padding" Value="2 4 2 4" />
         <Setter Property="HorizontalContentAlignment" Value="Center" />
         <Setter Property="VerticalContentAlignment" Value="Center" />
         <Setter Property="Template">
@@ -26,18 +26,22 @@
                                   TextElement.Foreground="{TemplateBinding Foreground}" />
             </ControlTemplate>
         </Setter>
-        <Style Selector="^:checked /template/ ContentPresenter#PART_ContentPresenter">
-            <Setter Property="Background" Value="{DynamicResource ThemeControlHighBrush}" />
-            <Setter Property="BorderBrush" Value="{DynamicResource ThemeBorderMidBrush}" />
-        </Style>
         <Style Selector="^:pointerover /template/ ContentPresenter#PART_ContentPresenter">
-            <Setter Property="BorderBrush" Value="{DynamicResource ThemeBorderMidBrush}" />
+            <Setter Property="Background" Value="{DynamicResource RaisedFrameHoveredBackgroundBrush}" />
+            <Setter Property="BorderBrush" Value="{DynamicResource RaisedFrameHoveredBorderBrush}" />
+        </Style>
+        <Style Selector="^:checked  /template/ ContentPresenter#PART_ContentPresenter">
+            <Setter Property="Background" Value="{DynamicResource RaisedFrameActiveBackgroundBrush}" />
+            <Setter Property="BorderBrush" Value="{DynamicResource RaisedFrameActiveBorderBrush}" />
         </Style>
         <Style Selector="^:pressed  /template/ ContentPresenter#PART_ContentPresenter">
-            <Setter Property="Background" Value="{DynamicResource ThemeControlHighBrush}" />
+            <Setter Property="Background" Value="{DynamicResource RaisedFrameActiveBackgroundBrush}" />
+            <Setter Property="BorderBrush" Value="{DynamicResource RaisedFrameActiveBorderBrush}" />
         </Style>
         <Style Selector="^:disabled">
-            <Setter Property="Opacity" Value="{DynamicResource ThemeDisabledOpacity}" />
+            <Setter Property="Background" Value="{DynamicResource RaisedFrameDisabledBackgroundBrush}" />
+            <Setter Property="BorderBrush" Value="{DynamicResource RaisedFrameDisabledBorderBrush}" />
+            <Setter Property="Foreground" Value="{DynamicResource DisabledForegroundBrush}" />
         </Style>
     </ControlTheme>
 </ResourceDictionary>
